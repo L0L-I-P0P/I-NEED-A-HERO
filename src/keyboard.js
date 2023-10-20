@@ -15,7 +15,7 @@ function runInteractiveConsole(hero) {
     w: () => console.log('w'),
     s: () => console.log('s'),
     d: () => hero.moveRight(),
-    space: () => console.log(' '),
+    space: () => hero.attack(),
     y: () => console.log('y'),
   };
 
