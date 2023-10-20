@@ -1,18 +1,19 @@
-// Наш герой.
+const Boomerang = require('./Boomerang');
 
+
+// Наш герой.
 class Hero {
-  constructor({ position }) {
+  constructor() {
     this.skin = '🤠'; // можете использовать любые emoji '💃'
-    this.position = position;
+    this.position = 5;
+    this.boomerang = new Boomerang();
   }
 
   moveLeft() {
-    // Идём влево.
     this.position -= 1;
   }
 
   moveRight() {
-    // Идём вправо.
     this.position += 1;
   }
 
